@@ -18,16 +18,19 @@ type collector =
   }
 
 type tag = string
-type prop_name = string 
+type prop_name = string
 type props = (arg_label * expression) list
-type dom_repr = Empty | Text of Location.t * expression list | Element of Location.t * tag * props * dom_repr list
+type dom_repr =
+  | Empty
+  | Text of Location.t * expression list
+  | Element of Location.t * tag * props * dom_repr list
 
 let expr_placeholder_prefix = "__b_s_x__"
 
 let re_id = Re.compile Re.(seq [ str expr_placeholder_prefix; rep digit ])
 
 let collect e =
-  let rec loop col e = 
+  let rec loop col e =
     match e.pexp_desc with
     | Pexp_apply ({ pexp_desc = Pexp_constant Pconst_string (str, None) }, al) ->
       let expr_list = snd @@ List.split al in
@@ -94,15 +97,25 @@ let handle_text loc expr_map xs =
     in
     let map item = match item with
       | Pure_text e -> to_react_el e
-      | Ocaml_expr e -> 
+      | Ocaml_expr e ->
         match e.pexp_desc with
         | Pexp_constant Pconst_string (_, Some "j") -> to_react_el e
         | _ -> e
     in
     Text (loc, (exprs |> List.map map))
 
+let tidy_attr =
+  function
+  | "class" -> "className"
+  | "for" -> "htmlFor"
+  | "type" -> "_type"
+  | "to" -> "_to"
+  | _ as origin -> origin
+
 let handle_element loc expr_map (_, name) attrs children =
-  let attrs_map ((_,n), v) = match v with
+  let attrs_map ((_,n), v) =
+    let n = tidy_attr n in
+    match v with
     | "" -> [ (Labelled n, Exp.ident { loc; txt = Lident n }) ]
     | _ ->
       let v_exprs = text_to_exprs loc expr_map v in
@@ -187,7 +200,7 @@ let expr mapper e =
         |> signals
         |> tree
           ~text: (handle_text e.pexp_loc c.exprs)
-          ~element: (handle_element e.pexp_loc c.exprs) 
+          ~element: (handle_element e.pexp_loc c.exprs)
       with
       | Some de -> dom_to_expr de
       | None -> default_mapper.expr mapper e
