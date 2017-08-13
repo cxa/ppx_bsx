@@ -14,7 +14,7 @@ module ExprMap = Map.Make(String)
 type collector =
   { html_frags: string list;
     exprs: expression ExprMap.t;
-    counter: int;
+    placeholder_index: int;
   }
 
 type tag = string
@@ -40,13 +40,13 @@ let collect e =
     | Pexp_constant Pconst_string (str, None) ->
       { col with html_frags = col.html_frags @ [str] }
     | _ ->
-      let html = Printf.sprintf "%s%i" expr_placeholder_prefix col.counter in
+      let html = Printf.sprintf "%s%i" expr_placeholder_prefix col.placeholder_index in
       let html_frags = col.html_frags @ [html] in
       let exprs = ExprMap.add html e col.exprs in
-      let counter = col.counter + 1 in
-      { html_frags; exprs; counter }
+      let placeholder_index = col.placeholder_index + 1 in
+      { html_frags; exprs; placeholder_index }
   in
-  loop { html_frags = []; exprs = ExprMap.empty; counter = 0 } e
+  loop { html_frags = []; exprs = ExprMap.empty; placeholder_index = 0 } e
 
 type text_expr_type =
   | Pure_text of expression
