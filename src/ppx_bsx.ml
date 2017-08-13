@@ -35,13 +35,13 @@ let collect e =
     | Pexp_apply ({ pexp_desc = Pexp_constant Pconst_string (str, None) }, al) ->
       let expr_list = snd @@ List.split al in
       let c = List.fold_left loop col expr_list in
-      let html_frags = str :: c.html_frags in
+      let html_frags = str :: (List.rev c.html_frags) in
       { c with html_frags  }
     | Pexp_constant Pconst_string (str, None) ->
-      { col with html_frags = col.html_frags @ [str] }
+      { col with html_frags = str :: col.html_frags }
     | _ ->
       let html = Printf.sprintf "%s%i" expr_placeholder_prefix col.placeholder_index in
-      let html_frags = col.html_frags @ [html] in
+      let html_frags = html :: col.html_frags in
       let exprs = ExprMap.add html e col.exprs in
       let placeholder_index = col.placeholder_index + 1 in
       { html_frags; exprs; placeholder_index }
