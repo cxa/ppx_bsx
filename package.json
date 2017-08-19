@@ -1,0 +1,12 @@
+{
+  "name": "ppx_bsx",
+  "version": "1.0.0",
+  "description": "OCaml JSX for ReasonReact",
+  "main": "index.js",
+  "repository": "ssh://git@bitbucket.org/cxa/ppx_bsx.git",
+  "author": "CHEN Xian-an <xianan.chen@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "bs-platform": "https://github.com/BuckleScript/bucklescript.git"
+  }
+}

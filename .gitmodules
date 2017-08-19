@@ -1,0 +1,15 @@
+[submodule "bspack/ocaml-migrate-parsetree"]
+	path = bspack/ocaml-migrate-parsetree
+	url = https://github.com/ocaml-ppx/ocaml-migrate-parsetree.git
+[submodule "bspack/uutf"]
+	path = bspack/uutf
+	url = https://github.com/dbuenzli/uutf.git
+[submodule "bspack/uchar"]
+	path = bspack/uchar
+	url = https://github.com/ocaml/uchar.git
+[submodule "bspack/ocaml-re"]
+	path = bspack/ocaml-re
+	url = https://github.com/ocaml/ocaml-re.git
+[submodule "bspack/markup"]
+	path = bspack/markup
+	url = https://github.com/aantron/markup.ml.git
