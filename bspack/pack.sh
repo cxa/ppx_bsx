@@ -1,4 +1,4 @@
-rm ppx_bsx.ml
+rm ../ppx_bsx.ml
 
 git submodule update --init
 
@@ -19,4 +19,4 @@ cd ../../../../
 -I markup/src \
 -I ocaml-re/lib \
 -I ocaml-migrate-parsetree/_build/default/src \
--o ./ppx_bsx.ml
+-o ../ppx_bsx.ml

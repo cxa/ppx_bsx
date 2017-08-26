@@ -1,0 +1,10 @@
+*.exe
+*.tgz
+bspack
+src
+test
+Makefile
+yarn.lock
+.gitmodules
+.merlin
+.npmignore

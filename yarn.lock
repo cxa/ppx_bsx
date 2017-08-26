@@ -2,6 +2,6 @@
 # yarn lockfile v1
 
 
-"bs-platform@https://github.com/BuckleScript/bucklescript.git":
-  version "1.8.3"
-  resolved "https://github.com/BuckleScript/bucklescript.git#970f1b14996390adfa1918b9a078266e578a4d1f"
+bs-platform@^1.9:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-1.9.0.tgz#b8454e6c4760f63907aff891400e855c6b5522b7"
