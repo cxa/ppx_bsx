@@ -1,6 +1,6 @@
 {
   "name": "ppx_bsx",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "OCaml JSX for ReasonReact",
   "main": "ppx_bsx.ml",
   "author": "CHEN Xian-an <xianan.chen@gmail.com>",

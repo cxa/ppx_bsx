@@ -4,7 +4,7 @@ OCaml JSX for [ReasonReact](https://github.com/reasonml/reason-react/).
 
 ## Install
 
-- `yarn add ppx_bsx` or `npm i -S ppx_bsx`
+- `yarn add -D ppx_bsx` or `npm i --save-dev ppx_bsx`
 - add `"ppx-flags": ["./node_modules/ppx_bsx/bin/ppx_bsx.exe"]` to `bsconfig.json`
 
 👉 <https://github.com/cxa/ppx_bsx_example>
