@@ -4,17 +4,10 @@ OCaml JSX for [ReasonReact](https://github.com/reasonml/reason-react/).
 
 ## Install
 
-Currently, you can only install manually:
+- `yarn add ppx_bsx` or `npm i -S ppx_bsx`
+- add `"ppx-flags": ["./node_modules/ppx_bsx/bin/ppx_bsx.exe"]` to `bsconfig.json`
 
-- Install opam if you haven't
-- Switch to 4.02.3: `opam switch 4.02.3`
-- Install deps: `opam install ocaml-migrate-parsetree markup re
-`
-- Type `make` in dir of this repo
-- Copy `ppx_bsx.exe` to one of your `$PATH`s e.g. `/usr/local/bin`
-- On your ReasonReact project, add `"ppx-flags": ["ppx_bsx.exe"]` to `bsconfig.json`
-
-*Install from npm is working in progress.*
+👉 <https://github.com/cxa/ppx_bsx_example>
 
 ## Usage
 
