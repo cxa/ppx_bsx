@@ -92,7 +92,7 @@ let handle_text loc expr_map xs =
     let exprs = text_to_exprs loc expr_map str in
     let to_react_el e =
       let loc = e.pexp_loc in
-      let rrste = Exp.ident ~loc { loc; txt = Ldot (Lident "ReasonReact", "stringToElement")} in
+      let rrste = Exp.ident ~loc { loc; txt = Ldot (Lident "ReasonReact", "string")} in
       Exp.apply rrste [ (Nolabel, e)]
     in
     let map item = match item with

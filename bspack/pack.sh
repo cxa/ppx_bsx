@@ -10,7 +10,7 @@ mmv -d "*.pp.mli" "#1.mli"
 mmv -d "*.pp.ml" "#1.ml"
 cd ../../../../
 
-../node_modules/bs-platform/bin/bspack.exe \
+./bspack.exe \
 -bs-main Ppx_bsx \
 -prelude-str "module Result = struct type ('a, 'b) result = Ok of 'a | Error of 'b end open Result" \
 -I ../src \
