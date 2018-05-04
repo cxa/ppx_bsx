@@ -16,7 +16,7 @@
   "scripts": {
     "postinstall": "sh postinstall.sh"
   },
-  "peerDpendencies": {
+  "peerDependencies": {
     "bs-platform": "^3.0.0"
   }
 }
