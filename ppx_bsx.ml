@@ -8,6 +8,7 @@ module Ast_404
 # 1 "src/ast_404.ml"
 # 1 "src/ast_404.ml"
 # 1 "src/ast_404.ml"
+# 1 "src/ast_404.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -16688,6 +16689,7 @@ module Ast_402
 # 1 "src/ast_402.ml"
 # 1 "src/ast_402.ml"
 # 1 "src/ast_402.ml"
+# 1 "src/ast_402.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -19536,6 +19538,7 @@ end
 module Ast_403
 = struct
 #1 "ast_403.ml"
+# 1 "src/ast_403.ml"
 # 1 "src/ast_403.ml"
 # 1 "src/ast_403.ml"
 # 1 "src/ast_403.ml"
@@ -22490,6 +22493,7 @@ end
 module Ast_405
 = struct
 #1 "ast_405.ml"
+# 1 "src/ast_405.ml"
 # 1 "src/ast_405.ml"
 # 1 "src/ast_405.ml"
 # 1 "src/ast_405.ml"
@@ -25541,6 +25545,7 @@ module Migrate_parsetree_402_403_migrate
 # 1 "src/migrate_parsetree_402_403_migrate.ml"
 # 1 "src/migrate_parsetree_402_403_migrate.ml"
 # 1 "src/migrate_parsetree_402_403_migrate.ml"
+# 1 "src/migrate_parsetree_402_403_migrate.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -27435,6 +27440,7 @@ module Migrate_parsetree_def : sig
 # 1 "src/migrate_parsetree_def.mli"
 # 1 "src/migrate_parsetree_def.mli"
 # 1 "src/migrate_parsetree_def.mli"
+# 1 "src/migrate_parsetree_def.mli"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -27477,6 +27483,7 @@ val migration_error_message : missing_feature -> string
 
 end = struct
 #1 "migrate_parsetree_def.ml"
+# 1 "src/migrate_parsetree_def.ml"
 # 1 "src/migrate_parsetree_def.ml"
 # 1 "src/migrate_parsetree_def.ml"
 # 1 "src/migrate_parsetree_def.ml"
@@ -27574,6 +27581,7 @@ end
 module Migrate_parsetree_403_402_migrate
 = struct
 #1 "migrate_parsetree_403_402_migrate.ml"
+# 1 "src/migrate_parsetree_403_402_migrate.ml"
 # 1 "src/migrate_parsetree_403_402_migrate.ml"
 # 1 "src/migrate_parsetree_403_402_migrate.ml"
 # 1 "src/migrate_parsetree_403_402_migrate.ml"
@@ -29532,6 +29540,7 @@ module Migrate_parsetree_402_403
 # 1 "src/migrate_parsetree_402_403.ml"
 # 1 "src/migrate_parsetree_402_403.ml"
 # 1 "src/migrate_parsetree_402_403.ml"
+# 1 "src/migrate_parsetree_402_403.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -29673,6 +29682,7 @@ module Migrate_parsetree_403_402
 # 1 "src/migrate_parsetree_403_402.ml"
 # 1 "src/migrate_parsetree_403_402.ml"
 # 1 "src/migrate_parsetree_403_402.ml"
+# 1 "src/migrate_parsetree_403_402.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -29808,6 +29818,7 @@ end
 module Migrate_parsetree_403_404_migrate
 = struct
 #1 "migrate_parsetree_403_404_migrate.ml"
+# 1 "src/migrate_parsetree_403_404_migrate.ml"
 # 1 "src/migrate_parsetree_403_404_migrate.ml"
 # 1 "src/migrate_parsetree_403_404_migrate.ml"
 # 1 "src/migrate_parsetree_403_404_migrate.ml"
@@ -31726,6 +31737,7 @@ end
 module Migrate_parsetree_404_403_migrate
 = struct
 #1 "migrate_parsetree_404_403_migrate.ml"
+# 1 "src/migrate_parsetree_404_403_migrate.ml"
 # 1 "src/migrate_parsetree_404_403_migrate.ml"
 # 1 "src/migrate_parsetree_404_403_migrate.ml"
 # 1 "src/migrate_parsetree_404_403_migrate.ml"
@@ -33659,6 +33671,7 @@ module Migrate_parsetree_403_404
 # 1 "src/migrate_parsetree_403_404.ml"
 # 1 "src/migrate_parsetree_403_404.ml"
 # 1 "src/migrate_parsetree_403_404.ml"
+# 1 "src/migrate_parsetree_403_404.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -33800,6 +33813,7 @@ module Migrate_parsetree_404_403
 # 1 "src/migrate_parsetree_404_403.ml"
 # 1 "src/migrate_parsetree_404_403.ml"
 # 1 "src/migrate_parsetree_404_403.ml"
+# 1 "src/migrate_parsetree_404_403.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -33935,6 +33949,7 @@ end
 module Migrate_parsetree_404_405_migrate
 = struct
 #1 "migrate_parsetree_404_405_migrate.ml"
+# 1 "src/migrate_parsetree_404_405_migrate.ml"
 # 1 "src/migrate_parsetree_404_405_migrate.ml"
 # 1 "src/migrate_parsetree_404_405_migrate.ml"
 # 1 "src/migrate_parsetree_404_405_migrate.ml"
@@ -35668,6 +35683,7 @@ module Migrate_parsetree_405_404_migrate
 # 1 "src/migrate_parsetree_405_404_migrate.ml"
 # 1 "src/migrate_parsetree_405_404_migrate.ml"
 # 1 "src/migrate_parsetree_405_404_migrate.ml"
+# 1 "src/migrate_parsetree_405_404_migrate.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -37395,6 +37411,7 @@ module Migrate_parsetree_404_405
 # 1 "src/migrate_parsetree_404_405.ml"
 # 1 "src/migrate_parsetree_404_405.ml"
 # 1 "src/migrate_parsetree_404_405.ml"
+# 1 "src/migrate_parsetree_404_405.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -37536,6 +37553,7 @@ module Migrate_parsetree_405_404
 # 1 "src/migrate_parsetree_405_404.ml"
 # 1 "src/migrate_parsetree_405_404.ml"
 # 1 "src/migrate_parsetree_405_404.ml"
+# 1 "src/migrate_parsetree_405_404.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -37671,6 +37689,7 @@ end
 module Ast_406
 = struct
 #1 "ast_406.ml"
+# 1 "src/ast_406.ml"
 # 1 "src/ast_406.ml"
 # 1 "src/ast_406.ml"
 # 1 "src/ast_406.ml"
@@ -40755,6 +40774,7 @@ module Migrate_parsetree_405_406_migrate
 # 1 "src/migrate_parsetree_405_406_migrate.ml"
 # 1 "src/migrate_parsetree_405_406_migrate.ml"
 # 1 "src/migrate_parsetree_405_406_migrate.ml"
+# 1 "src/migrate_parsetree_405_406_migrate.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -42472,6 +42492,7 @@ end
 module Migrate_parsetree_406_405_migrate
 = struct
 #1 "migrate_parsetree_406_405_migrate.ml"
+# 1 "src/migrate_parsetree_406_405_migrate.ml"
 # 1 "src/migrate_parsetree_406_405_migrate.ml"
 # 1 "src/migrate_parsetree_406_405_migrate.ml"
 # 1 "src/migrate_parsetree_406_405_migrate.ml"
@@ -44208,6 +44229,7 @@ module Migrate_parsetree_405_406
 # 1 "src/migrate_parsetree_405_406.ml"
 # 1 "src/migrate_parsetree_405_406.ml"
 # 1 "src/migrate_parsetree_405_406.ml"
+# 1 "src/migrate_parsetree_405_406.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -44349,6 +44371,7 @@ module Migrate_parsetree_406_405
 # 1 "src/migrate_parsetree_406_405.ml"
 # 1 "src/migrate_parsetree_406_405.ml"
 # 1 "src/migrate_parsetree_406_405.ml"
+# 1 "src/migrate_parsetree_406_405.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -44483,6 +44506,7 @@ let copy_mapper = fun
 end
 module Migrate_parsetree_versions : sig 
 #1 "migrate_parsetree_versions.mli"
+# 1 "src/migrate_parsetree_versions.mli"
 # 1 "src/migrate_parsetree_versions.mli"
 # 1 "src/migrate_parsetree_versions.mli"
 # 1 "src/migrate_parsetree_versions.mli"
@@ -44796,6 +44820,7 @@ end
 
 end = struct
 #1 "migrate_parsetree_versions.ml"
+# 1 "src/migrate_parsetree_versions.ml"
 # 1 "src/migrate_parsetree_versions.ml"
 # 1 "src/migrate_parsetree_versions.ml"
 # 1 "src/migrate_parsetree_versions.ml"
@@ -45523,6 +45548,7 @@ module Migrate_parsetree_ast_io : sig
 # 1 "src/migrate_parsetree_ast_io.mli"
 # 1 "src/migrate_parsetree_ast_io.mli"
 # 1 "src/migrate_parsetree_ast_io.mli"
+# 1 "src/migrate_parsetree_ast_io.mli"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -45575,6 +45601,7 @@ val to_bytes : filename -> ast -> bytes
 
 end = struct
 #1 "migrate_parsetree_ast_io.ml"
+# 1 "src/migrate_parsetree_ast_io.ml"
 # 1 "src/migrate_parsetree_ast_io.ml"
 # 1 "src/migrate_parsetree_ast_io.ml"
 # 1 "src/migrate_parsetree_ast_io.ml"
@@ -45693,12 +45720,14 @@ module Migrate_parsetree_compiler_functions
 # 1 "src/migrate_parsetree_compiler_functions.ml"
 # 1 "src/migrate_parsetree_compiler_functions.ml"
 # 1 "src/migrate_parsetree_compiler_functions.ml"
+# 1 "src/migrate_parsetree_compiler_functions.ml"
 # 1 "src/compiler-functions/lt_406.ml"
 let error_of_exn = Location.error_of_exn
 
 end
 module Migrate_parsetree_driver : sig 
 #1 "migrate_parsetree_driver.mli"
+# 1 "src/migrate_parsetree_driver.mli"
 # 1 "src/migrate_parsetree_driver.mli"
 # 1 "src/migrate_parsetree_driver.mli"
 # 1 "src/migrate_parsetree_driver.mli"
@@ -45797,6 +45826,7 @@ val rewrite_structure
 
 end = struct
 #1 "migrate_parsetree_driver.ml"
+# 1 "src/migrate_parsetree_driver.ml"
 # 1 "src/migrate_parsetree_driver.ml"
 # 1 "src/migrate_parsetree_driver.ml"
 # 1 "src/migrate_parsetree_driver.ml"
@@ -46284,6 +46314,7 @@ end
 module Migrate_parsetree
 = struct
 #1 "migrate_parsetree.ml"
+# 1 "src/migrate_parsetree.ml"
 # 1 "src/migrate_parsetree.ml"
 # 1 "src/migrate_parsetree.ml"
 # 1 "src/migrate_parsetree.ml"
@@ -49344,7 +49375,7 @@ let rec text_to_exprs loc expr_map str =
         es := text_to_exprs loc expr_map (String.sub s 0 i) @ !es
       else ();
       if j < slen then
-        es :=  !es @ text_to_exprs loc expr_map (String.sub s j (slen-j))
+        es := !es @ text_to_exprs loc expr_map (String.sub s j (slen-j))
       else ();
       !es
     end
@@ -49354,7 +49385,11 @@ let rec text_to_exprs loc expr_map str =
   | Some g -> to_expr str g
 
 let handle_text loc expr_map xs =
-  let str = String.trim (String.concat "" xs) in
+  let str =
+    xs
+    |> List.map (fun x -> STR.(split (regexp "[ \t\n]+") x) |> String.concat "")
+    |> String.concat ""
+  in
   match str with
   | "" -> Empty
   | _ ->

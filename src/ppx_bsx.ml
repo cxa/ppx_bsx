@@ -75,7 +75,7 @@ let rec text_to_exprs loc expr_map str =
         es := text_to_exprs loc expr_map (String.sub s 0 i) @ !es
       else ();
       if j < slen then
-        es :=  !es @ text_to_exprs loc expr_map (String.sub s j (slen-j))
+        es := !es @ text_to_exprs loc expr_map (String.sub s j (slen-j))
       else ();
       !es
     end
@@ -85,7 +85,11 @@ let rec text_to_exprs loc expr_map str =
   | Some g -> to_expr str g
 
 let handle_text loc expr_map xs =
-  let str = String.trim (String.concat "" xs) in
+  let str =
+    xs
+    |> List.map (fun x -> STR.(split (regexp "[ \t\n]+") x) |> String.concat "")
+    |> String.concat ""
+  in
   match str with
   | "" -> Empty
   | _ ->
