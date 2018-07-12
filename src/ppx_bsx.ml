@@ -81,13 +81,25 @@ let rec text_to_exprs loc expr_map str =
     end
   in
   match Re.exec_opt re_id str with
-  | None -> [ Pure_text (Exp.constant (Pconst_string (str, None))) ]
+  | None ->
+    begin
+      match String.trim str with
+      | "" -> [ ]
+      | _ as s ->
+        let nl_to_sp = STR.(global_replace (regexp "\n") " " s) in
+        [ Pure_text (Exp.constant (Pconst_string (nl_to_sp, None))) ]
+    end
   | Some g -> to_expr str g
 
 let handle_text loc expr_map xs =
   let str =
     xs
-    |> List.map (fun x -> STR.(split (regexp "[ \t\n]+") x) |> String.concat "")
+    |> List.map (fun x ->
+        STR.(split (regexp "\n+") x)
+        |> List.map String.trim
+        |> String.concat "\n"
+        |> String.trim
+      )
     |> String.concat ""
   in
   match str with
@@ -99,14 +111,14 @@ let handle_text loc expr_map xs =
       let rrste = Exp.ident ~loc { loc; txt = Ldot (Lident "ReasonReact", "string")} in
       Exp.apply rrste [ (Nolabel, e)]
     in
-    let map item = match item with
-      | Pure_text e -> to_react_el e
+    let fold acc item = match item with
+      | Pure_text e -> to_react_el e :: acc
       | Ocaml_expr e ->
         match e.pexp_desc with
-        | Pexp_constant Pconst_string (_, Some "j") -> to_react_el e
-        | _ -> e
+        | Pexp_constant Pconst_string (_, Some "j") -> to_react_el e :: acc
+        | _ -> e :: acc
     in
-    Text (loc, (exprs |> List.map map))
+    Text (loc, (exprs |> List.fold_left fold [] |> List.rev))
 
 let tidy_attr =
   function

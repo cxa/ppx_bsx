@@ -9,8 +9,8 @@ let sample ~id child =
     <span ref="(fun () -> 2)" key='span'>
       "a"
       "b"
-      c
-      d
+      change my mind
+      no
     </span>
     <a className="(string_of_int 4) id (string_of_float 6.)" id="id">"(child)": "("Hello" ^ " World" ^ "Foo" ^ "Bar")"</a>
   </div>
