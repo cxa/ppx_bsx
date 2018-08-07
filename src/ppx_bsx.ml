@@ -128,6 +128,10 @@ let tidy_attr =
   | "for" -> "htmlFor"
   | "type" -> "type_"
   | "to" -> "to_"
+  | "open" -> "open_"
+  | "begin" -> "begin_"
+  | "end" -> "end_"
+  | "in" -> "in_"
   | _ as origin -> origin
 
 let handle_element loc expr_map (_, name) attrs children =
