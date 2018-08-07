@@ -14,6 +14,7 @@ module Ast_404
 # 1 "src/ast_404.ml"
 # 1 "src/ast_404.ml"
 # 1 "src/ast_404.ml"
+# 1 "src/ast_404.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -16700,6 +16701,7 @@ module Ast_402
 # 1 "src/ast_402.ml"
 # 1 "src/ast_402.ml"
 # 1 "src/ast_402.ml"
+# 1 "src/ast_402.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -19548,6 +19550,7 @@ end
 module Ast_403
 = struct
 #1 "ast_403.ml"
+# 1 "src/ast_403.ml"
 # 1 "src/ast_403.ml"
 # 1 "src/ast_403.ml"
 # 1 "src/ast_403.ml"
@@ -22508,6 +22511,7 @@ end
 module Ast_405
 = struct
 #1 "ast_405.ml"
+# 1 "src/ast_405.ml"
 # 1 "src/ast_405.ml"
 # 1 "src/ast_405.ml"
 # 1 "src/ast_405.ml"
@@ -25571,6 +25575,7 @@ module Migrate_parsetree_402_403_migrate
 # 1 "src/migrate_parsetree_402_403_migrate.ml"
 # 1 "src/migrate_parsetree_402_403_migrate.ml"
 # 1 "src/migrate_parsetree_402_403_migrate.ml"
+# 1 "src/migrate_parsetree_402_403_migrate.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -27471,6 +27476,7 @@ module Migrate_parsetree_def : sig
 # 1 "src/migrate_parsetree_def.mli"
 # 1 "src/migrate_parsetree_def.mli"
 # 1 "src/migrate_parsetree_def.mli"
+# 1 "src/migrate_parsetree_def.mli"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -27513,6 +27519,7 @@ val migration_error_message : missing_feature -> string
 
 end = struct
 #1 "migrate_parsetree_def.ml"
+# 1 "src/migrate_parsetree_def.ml"
 # 1 "src/migrate_parsetree_def.ml"
 # 1 "src/migrate_parsetree_def.ml"
 # 1 "src/migrate_parsetree_def.ml"
@@ -27616,6 +27623,7 @@ end
 module Migrate_parsetree_403_402_migrate
 = struct
 #1 "migrate_parsetree_403_402_migrate.ml"
+# 1 "src/migrate_parsetree_403_402_migrate.ml"
 # 1 "src/migrate_parsetree_403_402_migrate.ml"
 # 1 "src/migrate_parsetree_403_402_migrate.ml"
 # 1 "src/migrate_parsetree_403_402_migrate.ml"
@@ -29586,6 +29594,7 @@ module Migrate_parsetree_402_403
 # 1 "src/migrate_parsetree_402_403.ml"
 # 1 "src/migrate_parsetree_402_403.ml"
 # 1 "src/migrate_parsetree_402_403.ml"
+# 1 "src/migrate_parsetree_402_403.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -29733,6 +29742,7 @@ module Migrate_parsetree_403_402
 # 1 "src/migrate_parsetree_403_402.ml"
 # 1 "src/migrate_parsetree_403_402.ml"
 # 1 "src/migrate_parsetree_403_402.ml"
+# 1 "src/migrate_parsetree_403_402.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -29868,6 +29878,7 @@ end
 module Migrate_parsetree_403_404_migrate
 = struct
 #1 "migrate_parsetree_403_404_migrate.ml"
+# 1 "src/migrate_parsetree_403_404_migrate.ml"
 # 1 "src/migrate_parsetree_403_404_migrate.ml"
 # 1 "src/migrate_parsetree_403_404_migrate.ml"
 # 1 "src/migrate_parsetree_403_404_migrate.ml"
@@ -31792,6 +31803,7 @@ end
 module Migrate_parsetree_404_403_migrate
 = struct
 #1 "migrate_parsetree_404_403_migrate.ml"
+# 1 "src/migrate_parsetree_404_403_migrate.ml"
 # 1 "src/migrate_parsetree_404_403_migrate.ml"
 # 1 "src/migrate_parsetree_404_403_migrate.ml"
 # 1 "src/migrate_parsetree_404_403_migrate.ml"
@@ -33737,6 +33749,7 @@ module Migrate_parsetree_403_404
 # 1 "src/migrate_parsetree_403_404.ml"
 # 1 "src/migrate_parsetree_403_404.ml"
 # 1 "src/migrate_parsetree_403_404.ml"
+# 1 "src/migrate_parsetree_403_404.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -33884,6 +33897,7 @@ module Migrate_parsetree_404_403
 # 1 "src/migrate_parsetree_404_403.ml"
 # 1 "src/migrate_parsetree_404_403.ml"
 # 1 "src/migrate_parsetree_404_403.ml"
+# 1 "src/migrate_parsetree_404_403.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -34019,6 +34033,7 @@ end
 module Migrate_parsetree_404_405_migrate
 = struct
 #1 "migrate_parsetree_404_405_migrate.ml"
+# 1 "src/migrate_parsetree_404_405_migrate.ml"
 # 1 "src/migrate_parsetree_404_405_migrate.ml"
 # 1 "src/migrate_parsetree_404_405_migrate.ml"
 # 1 "src/migrate_parsetree_404_405_migrate.ml"
@@ -35764,6 +35779,7 @@ module Migrate_parsetree_405_404_migrate
 # 1 "src/migrate_parsetree_405_404_migrate.ml"
 # 1 "src/migrate_parsetree_405_404_migrate.ml"
 # 1 "src/migrate_parsetree_405_404_migrate.ml"
+# 1 "src/migrate_parsetree_405_404_migrate.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -37497,6 +37513,7 @@ module Migrate_parsetree_404_405
 # 1 "src/migrate_parsetree_404_405.ml"
 # 1 "src/migrate_parsetree_404_405.ml"
 # 1 "src/migrate_parsetree_404_405.ml"
+# 1 "src/migrate_parsetree_404_405.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -37644,6 +37661,7 @@ module Migrate_parsetree_405_404
 # 1 "src/migrate_parsetree_405_404.ml"
 # 1 "src/migrate_parsetree_405_404.ml"
 # 1 "src/migrate_parsetree_405_404.ml"
+# 1 "src/migrate_parsetree_405_404.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -37779,6 +37797,7 @@ end
 module Ast_406
 = struct
 #1 "ast_406.ml"
+# 1 "src/ast_406.ml"
 # 1 "src/ast_406.ml"
 # 1 "src/ast_406.ml"
 # 1 "src/ast_406.ml"
@@ -40875,6 +40894,7 @@ module Migrate_parsetree_405_406_migrate
 # 1 "src/migrate_parsetree_405_406_migrate.ml"
 # 1 "src/migrate_parsetree_405_406_migrate.ml"
 # 1 "src/migrate_parsetree_405_406_migrate.ml"
+# 1 "src/migrate_parsetree_405_406_migrate.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -42592,6 +42612,7 @@ end
 module Migrate_parsetree_406_405_migrate
 = struct
 #1 "migrate_parsetree_406_405_migrate.ml"
+# 1 "src/migrate_parsetree_406_405_migrate.ml"
 # 1 "src/migrate_parsetree_406_405_migrate.ml"
 # 1 "src/migrate_parsetree_406_405_migrate.ml"
 # 1 "src/migrate_parsetree_406_405_migrate.ml"
@@ -44340,6 +44361,7 @@ module Migrate_parsetree_405_406
 # 1 "src/migrate_parsetree_405_406.ml"
 # 1 "src/migrate_parsetree_405_406.ml"
 # 1 "src/migrate_parsetree_405_406.ml"
+# 1 "src/migrate_parsetree_405_406.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -44487,6 +44509,7 @@ module Migrate_parsetree_406_405
 # 1 "src/migrate_parsetree_406_405.ml"
 # 1 "src/migrate_parsetree_406_405.ml"
 # 1 "src/migrate_parsetree_406_405.ml"
+# 1 "src/migrate_parsetree_406_405.ml"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -44621,6 +44644,7 @@ let copy_mapper = fun
 end
 module Migrate_parsetree_versions : sig 
 #1 "migrate_parsetree_versions.mli"
+# 1 "src/migrate_parsetree_versions.mli"
 # 1 "src/migrate_parsetree_versions.mli"
 # 1 "src/migrate_parsetree_versions.mli"
 # 1 "src/migrate_parsetree_versions.mli"
@@ -44940,6 +44964,7 @@ end
 
 end = struct
 #1 "migrate_parsetree_versions.ml"
+# 1 "src/migrate_parsetree_versions.ml"
 # 1 "src/migrate_parsetree_versions.ml"
 # 1 "src/migrate_parsetree_versions.ml"
 # 1 "src/migrate_parsetree_versions.ml"
@@ -45679,6 +45704,7 @@ module Migrate_parsetree_ast_io : sig
 # 1 "src/migrate_parsetree_ast_io.mli"
 # 1 "src/migrate_parsetree_ast_io.mli"
 # 1 "src/migrate_parsetree_ast_io.mli"
+# 1 "src/migrate_parsetree_ast_io.mli"
 (**************************************************************************)
 (*                                                                        *)
 (*                         OCaml Migrate Parsetree                        *)
@@ -45731,6 +45757,7 @@ val to_bytes : filename -> ast -> bytes
 
 end = struct
 #1 "migrate_parsetree_ast_io.ml"
+# 1 "src/migrate_parsetree_ast_io.ml"
 # 1 "src/migrate_parsetree_ast_io.ml"
 # 1 "src/migrate_parsetree_ast_io.ml"
 # 1 "src/migrate_parsetree_ast_io.ml"
@@ -45861,12 +45888,14 @@ module Migrate_parsetree_compiler_functions
 # 1 "src/migrate_parsetree_compiler_functions.ml"
 # 1 "src/migrate_parsetree_compiler_functions.ml"
 # 1 "src/migrate_parsetree_compiler_functions.ml"
+# 1 "src/migrate_parsetree_compiler_functions.ml"
 # 1 "src/compiler-functions/lt_406.ml"
 let error_of_exn = Location.error_of_exn
 
 end
 module Migrate_parsetree_driver : sig 
 #1 "migrate_parsetree_driver.mli"
+# 1 "src/migrate_parsetree_driver.mli"
 # 1 "src/migrate_parsetree_driver.mli"
 # 1 "src/migrate_parsetree_driver.mli"
 # 1 "src/migrate_parsetree_driver.mli"
@@ -45971,6 +46000,7 @@ val rewrite_structure
 
 end = struct
 #1 "migrate_parsetree_driver.ml"
+# 1 "src/migrate_parsetree_driver.ml"
 # 1 "src/migrate_parsetree_driver.ml"
 # 1 "src/migrate_parsetree_driver.ml"
 # 1 "src/migrate_parsetree_driver.ml"
@@ -46464,6 +46494,7 @@ end
 module Migrate_parsetree
 = struct
 #1 "migrate_parsetree.ml"
+# 1 "src/migrate_parsetree.ml"
 # 1 "src/migrate_parsetree.ml"
 # 1 "src/migrate_parsetree.ml"
 # 1 "src/migrate_parsetree.ml"
@@ -49497,7 +49528,9 @@ let collect e =
     | Pexp_constant Pconst_string (str, None) ->
       { col with html_frags = str :: col.html_frags }
     | _ ->
-      let html = Printf.sprintf "%s%i" expr_placeholder_prefix col.placeholder_index in
+      let html =
+        Printf.sprintf "%s%i" expr_placeholder_prefix col.placeholder_index
+      in
       let html_frags = html :: col.html_frags in
       let exprs = ExprMap.add html e col.exprs in
       let placeholder_index = col.placeholder_index + 1 in
@@ -49511,7 +49544,8 @@ type text_expr_type =
 
 let rec text_to_exprs loc expr_map str =
   let convert_to_j_if_neccessary e = match e.pexp_desc with
-    | Pexp_constant Pconst_string (str, Some "") -> Exp.constant ~loc:e.pexp_loc (Pconst_string (str, Some "j"))
+    | Pexp_constant Pconst_string (str, Some "") ->
+      Exp.constant ~loc:e.pexp_loc (Pconst_string (str, Some "j"))
     | _ -> e
   in
   let to_expr s g =
@@ -49521,8 +49555,12 @@ let rec text_to_exprs loc expr_map str =
     let e =
       try
         ExprMap.find key expr_map
-      with
-        _ -> raise (Location.Error (Location.error ~loc  "Wrong OCaml expression, you may missed the parentheses."))
+      with _ ->
+        let err =
+          Location.error
+            ~loc "Wrong OCaml expression, you may missed the parentheses."
+        in
+        raise (Location.Error err)
     in
     let oe = [Ocaml_expr (convert_to_j_if_neccessary e)] in
     let isWhole = i = 0 && j = slen in
@@ -49565,7 +49603,9 @@ let handle_text loc expr_map xs =
     let exprs = text_to_exprs loc expr_map str in
     let to_react_el e =
       let loc = e.pexp_loc in
-      let rrste = Exp.ident ~loc { loc; txt = Ldot (Lident "ReasonReact", "string")} in
+      let rrste =
+        Exp.ident ~loc { loc; txt = Ldot (Lident "ReasonReact", "string")}
+      in
       Exp.apply rrste [ (Nolabel, e)]
     in
     let fold acc item = match item with
@@ -49583,6 +49623,10 @@ let tidy_attr =
   | "for" -> "htmlFor"
   | "type" -> "type_"
   | "to" -> "to_"
+  | "open" -> "open_"
+  | "begin" -> "begin_"
+  | "end" -> "end_"
+  | "in" -> "in_"
   | _ as origin -> origin
 
 let handle_element loc expr_map (_, name) attrs children =
@@ -49600,9 +49644,14 @@ let handle_element loc expr_map (_, name) attrs children =
         let str_cat acc item =
           let e = to_e item in
           let loc = e.pexp_loc in
-          Exp.apply ~loc (Exp.ident ~loc { loc; txt = Lident "^"}) ([ (Nolabel, acc); (Nolabel, e) ])
+          Exp.apply
+            ~loc
+            (Exp.ident ~loc { loc; txt = Lident "^"})
+            ([ (Nolabel, acc); (Nolabel, e) ])
         in
-        [ (Labelled n, List.tl v_exprs |> List.fold_left str_cat (List.hd v_exprs |> to_e )) ]
+        [ ( Labelled n
+          , List.tl v_exprs
+            |> List.fold_left str_cat (List.hd v_exprs |> to_e )) ]
   in
   Element (loc, name, attrs |> List.map attrs_map |> List.concat, children)
 
@@ -49611,7 +49660,10 @@ let is_titlecase str =
   Char.uppercase fstc = fstc
 
 let handle_titlecase loc tag_name props children_expr =
-  let create_comp = Exp.ident ~loc { loc; txt = Ldot (Lident "ReasonReact", "element")} in
+  let create_comp =
+    Exp.ident
+      ~loc { loc; txt = Ldot (Lident "ReasonReact", "element")}
+  in
   let is_key_or_ref (label, _) = match label with
     | Labelled l -> l = "key" || l = "ref"
     | _ -> false
@@ -49619,25 +49671,37 @@ let handle_titlecase loc tag_name props children_expr =
   let (kr_props, mk_props) = List.partition is_key_or_ref props in
   let modules = (STR.split (STR.regexp "\\.") tag_name) @ [ "make" ] in
   let mk_ldot acc m =  Ldot (acc, m) in
-  let ident = List.tl modules |> List.fold_left mk_ldot (Lident (List.hd modules)) in
+  let ident =
+    List.tl modules
+    |> List.fold_left mk_ldot (Lident (List.hd modules)) in
   let make = Exp.ident ~loc { loc; txt = ident } in
-  let comp = Exp.apply make (mk_props @ [ (Nolabel, Exp.array children_expr) ]) in
+  let comp =
+    Exp.apply make (mk_props @ [ (Nolabel, Exp.array children_expr) ])
+  in
   Exp.apply create_comp (kr_props @ [ (Nolabel, comp) ])
 
 let handle_lowercase loc tag_name props children_expr =
-  let create_dom_el = Exp.ident ~ loc { loc; txt = Ldot (Lident "ReactDOMRe", "createElement")} in
-  let tag_name_expr = 
+  let create_dom_el =
+    Exp.ident ~ loc { loc; txt = Ldot (Lident "ReactDOMRe", "createElement")}
+  in
+  let tag_name_expr =
     if tag_name = fragment_placeholder then
-      (Nolabel, Exp.ident ~ loc { loc; txt = Ldot (Lident "ReasonReact", "fragment")})
+      ( Nolabel
+      , Exp.ident ~ loc { loc; txt = Ldot (Lident "ReasonReact", "fragment")}
+      )
     else
       (Nolabel, Exp.constant (Pconst_string (tag_name, None))) in
   let args = match List.length props with
     | 0 -> [ tag_name_expr; (Nolabel, Exp.array children_expr) ]
     | _ ->
-      let create_props = Exp.ident ~loc { loc; txt = Ldot (Lident "ReactDOMRe", "props")} in
+      let create_props =
+        Exp.ident ~loc { loc; txt = Ldot (Lident "ReactDOMRe", "props")}
+      in
       let unit_ = (Nolabel, Exp.construct ~loc {loc; txt = Lident "()"} None) in
       let props_expr = Exp.apply create_props (props @ [ unit_ ]) in
-      [ tag_name_expr; (Labelled "props", props_expr); (Nolabel, Exp.array children_expr) ] in
+      [ tag_name_expr; (Labelled "props", props_expr)
+      ; (Nolabel, Exp.array children_expr) ]
+  in
   Exp.apply create_dom_el args
 
 let expr mapper e =
@@ -49666,7 +49730,10 @@ let expr mapper e =
       | _ ->
         let open Lexing in
         let loc = e.pexp_loc in
-        let location = (fst location + loc.loc_start.pos_lnum, snd location + loc.loc_start.pos_cnum) in
+        let location =
+          fst location + loc.loc_start.pos_lnum
+        , snd location + loc.loc_start.pos_cnum
+        in
         let errstr = Error.to_string ~location error in
         raise (Location.Error (Location.error ~loc errstr))
     in
