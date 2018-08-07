@@ -27,6 +27,8 @@ type dom_repr =
 
 let expr_placeholder_prefix = "__b_s_x__"
 
+let fragment_placeholder = "ppx_bsx_fragment"
+
 let re_id = Re.compile Re.(seq [ str expr_placeholder_prefix; rep digit ])
 
 let collect e =
@@ -169,7 +171,11 @@ let handle_titlecase loc tag_name props children_expr =
 
 let handle_lowercase loc tag_name props children_expr =
   let create_dom_el = Exp.ident ~ loc { loc; txt = Ldot (Lident "ReactDOMRe", "createElement")} in
-  let tag_name_expr = (Nolabel, Exp.constant (Pconst_string (tag_name, None))) in
+  let tag_name_expr = 
+    if tag_name = fragment_placeholder then
+      (Nolabel, Exp.ident ~ loc { loc; txt = Ldot (Lident "ReasonReact", "fragment")})
+    else
+      (Nolabel, Exp.constant (Pconst_string (tag_name, None))) in
   let args = match List.length props with
     | 0 -> [ tag_name_expr; (Nolabel, Exp.array children_expr) ]
     | _ ->
@@ -211,8 +217,10 @@ let expr mapper e =
     in
     begin match
         html
-        |> STR.global_replace (STR.regexp "<>") "<ReasonReact.Fragment>"
-        |> STR.global_replace (STR.regexp "</>") "</ReasonReact.Fragment>"
+        |> STR.global_replace
+          (STR.regexp "<>") ("<" ^ fragment_placeholder ^ ">")
+        |> STR.global_replace
+          (STR.regexp "</>") ("</" ^ fragment_placeholder ^ ">")
         |> string
         |> parse_xml ~report
         |> signals
