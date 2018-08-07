@@ -211,6 +211,8 @@ let expr mapper e =
     in
     begin match
         html
+        |> STR.global_replace (STR.regexp "<>") "<ReasonReact.Fragment>"
+        |> STR.global_replace (STR.regexp "</>") "</ReasonReact.Fragment>"
         |> string
         |> parse_xml ~report
         |> signals
