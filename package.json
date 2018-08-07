@@ -1,6 +1,6 @@
 {
   "name": "ppx_bsx",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "OCaml JSX for ReasonReact",
   "main": "ppx_bsx.ml",
   "author": "CHEN Xian-an <xianan.chen@gmail.com>",
@@ -17,6 +17,6 @@
     "postinstall": "sh postinstall.sh"
   },
   "peerDependencies": {
-    "bs-platform": "^3.0.0 || ^4.0.0"
+    "bs-platform": "^4.0.0"
   }
 }
