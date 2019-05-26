@@ -1,11 +1,18 @@
 {
   "name": "ppx_bsx",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "OCaml JSX for ReasonReact",
   "main": "ppx_bsx.ml",
   "author": "CHEN Xian-an <xianan.chen@gmail.com>",
   "license": "MIT",
-  "keywords": ["reason", "reasonml", "bucklescript", "ocaml", "bsx", "jsx"],
+  "keywords": [
+    "reason",
+    "reasonml",
+    "bucklescript",
+    "ocaml",
+    "bsx",
+    "jsx"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/cxa/ppx_bsx.git"
@@ -17,6 +24,7 @@
     "postinstall": "sh postinstall.sh"
   },
   "peerDependencies": {
-    "bs-platform": "^4.0.0"
-  }
+    "bs-platform": "^5.0.4"
+  },
+  "devDependencies": {}
 }
