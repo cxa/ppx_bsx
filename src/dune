@@ -1,0 +1,14 @@
+(library
+ (name        ppx_bsx_lib)
+ (public_name ppx_bsx.lib)
+ (synopsis    "ReasonReact JSX in OCaml")
+ (modules     ppx_bsx_lib)
+ (kind        ppx_rewriter)
+ (libraries   str markup ppxlib)
+ (preprocess (pps ppxlib.metaquot)))
+
+(executable
+ (name        ppx_bsx)
+ (public_name ppx_bsx)
+ (modules     ppx_bsx)
+ (libraries   ppx_bsx.lib))

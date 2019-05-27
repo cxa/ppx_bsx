@@ -1,38 +1,51 @@
 # ppx_bsx
 
-OCaml JSX for [ReasonReact](https://github.com/reasonml/reason-react/).
+OCaml JSX for ReasonReact.
 
 ## Install
 
-- `yarn add -D ppx_bsx` or `npm i --save-dev ppx_bsx`
-- add `"ppx-flags": ["./node_modules/ppx_bsx/bin/ppx_bsx.exe"]` to `bsconfig.json`
+`ppx_bsx` depends on `ppx_lib`, which means that `ppx_bsx` doesn't support `bs-platform` 5.x, so first step is configuring your project to `"bs-platform": "^6.0.1"`.
 
-👉 <https://github.com/cxa/ppx_bsx_example>
+Install `ppx_bsx` with `opam` or `esy`, and add `ppx_bsx` executable to `bs-config.json`:
 
-## Usage
+```json
+{
+  "ppx-flags": [
+    "./_opam/bin/ppx_bsx",
+    "./node_modules/bs-platform/lib/bsppx.exe -bs-jsx 3"
+  ]
+}
+```
+
+Replace `./_opam/bin/ppx_bsx` to actual `ppx_bsx` installed path.
+
+## Basic Usage
 
 This is how it feel:
 
 ```ocaml
 [%bsx "
-  <Container>
-    <h1>Nice example</h1>
-    <nav className="(styles "sidebar")">
-      <Router.Route path='/' component="sidebar" />
-    </nav>
-    <div className="(styles "content")">
-      <Router.Switch>"(mk_switches link_groups)"</Router.Switch>
-    </div>
-  </Container>
+<Container>
+  <h1>Nice example</h1>
+  <nav className="(styles "sidebar")">
+    This is sidebar
+  </nav>
+  <div className="(styles "content")">
+    "{j|这是主内容|j}"
+  </div>
+</Container>
 "]
 ```
 
-### Simple rules
+### Simple Rules
+- Break `[%bsx ""]` into
+  ```ocaml
+  [%bsx "
 
+  "]
+  ```
+  and ignore the first and last quotation marks.
 - When you need OCaml expression, wrap it with double quotation marks, otherwise
 - For string literal value, just use single quotation marks
-- For singe text node, you don't need to wrap it to `ReasonReact.stringToElement`, (surprisedly) `<div>Hello, World</div>` is accepted
-
-### Bonus
-
-For non-ascii string, you can simply use string literal like `{|中文|}`, `ppx_bsx` will convert to `{j|中文|j}` automatically.
+- For single text node, you don't need to wrap it to `ReasonReact.string`, (surprisedly) `<span>Hello, World</span>` or `<span>"{j|你好，世界|j}"</span>` is accepted
+- `{|你好|}` will be transformed to `{j|你好|j}` automatically
