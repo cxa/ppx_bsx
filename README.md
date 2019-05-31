@@ -19,6 +19,8 @@ Install `ppx_bsx` with `opam` or `esy`, and add `ppx_bsx` executable to `bs-conf
 
 Replace `./_opam/bin/ppx_bsx` to actual `ppx_bsx` installed path.
 
+Example: https://github.com/cxa/ppx_bsx_example.
+
 ## Basic Usage
 
 This is how it feel:
@@ -31,7 +33,7 @@ This is how it feel:
     This is sidebar
   </nav>
   <div className="(styles "content")">
-    "{j|这是主内容|j}"
+    "(React.string {j|这是主内容|j})"
   </div>
 </Container>
 "]
@@ -47,5 +49,5 @@ This is how it feel:
   and ignore the first and last quotation marks.
 - When you need OCaml expression, wrap it with double quotation marks, otherwise
 - For string literal value, just use single quotation marks
-- For single text node, you don't need to wrap it to `ReasonReact.string`, (surprisedly) `<span>Hello, World</span>` or `<span>"{j|你好，世界|j}"</span>` is accepted
-- `{|你好|}` will be transformed to `{j|你好|j}` automatically
+- For single text node, you don't need to wrap it to `ReasonReact.string`, (surprisedly) `<span>Hello, World</span>` is accepted
+- Single text `{|你好|}` (but not `expr {|你好|}`) will be transformed to `{j|你好|j}` automatically
